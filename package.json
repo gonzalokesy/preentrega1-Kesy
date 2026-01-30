@@ -1,0 +1,25 @@
+{
+  "name": "preentrega1",
+  "version": "1.0.0",
+  "description": "Se monta servidor con express y se modifica archivo de producto JSON mediante modulo FS utilizando postman como cliente",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalokesy/preentrega1-Kesy.git"
+  },
+  "keywords": [
+    "servidor",
+    "express",
+    "coderhouse",
+    "JSON"
+  ],
+  "author": "Gonzalo Kesy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonzalokesy/preentrega1-Kesy/issues"
+  },
+  "homepage": "https://github.com/gonzalokesy/preentrega1-Kesy#readme"
+}
