@@ -1,6 +1,5 @@
 const fs = require('fs');
 const express = require('express');
-const { title } = require('process');
 const app = express();
 const PORT = 3000;
 const file = 'products.json';
