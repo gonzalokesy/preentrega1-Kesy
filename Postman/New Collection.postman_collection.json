@@ -1,0 +1,167 @@
+{
+  "info": {
+    "_postman_id": "a6e044f1-16df-45a7-8f81-47012ec1544d",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "17572782",
+    "_collection_link": "https://go.postman.co/collection/17572782-a6e044f1-16df-45a7-8f81-47012ec1544d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET - Home",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST - AddProduct",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Mouse Redragon\",\r\n  \"description\": \"Mouse inalambrica gamer\",\r\n  \"code\": \"MR56\",\r\n  \"price\": 120000,\r\n  \"status\": true,\r\n  \"stock\": 10,\r\n  \"category\": \"Computación\",\r\n  \"thumbnails\": [\"img1.jpg\", \"img2.jpg\"]\r\n}\r\n\r\n\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET - ProductById",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Mouse Redragon\",\r\n  \"description\": \"Mouse inalambrica gamer\",\r\n  \"code\": \"MR56\",\r\n  \"price\": 120000,\r\n  \"status\": true,\r\n  \"stock\": 10,\r\n  \"category\": \"Computación\",\r\n  \"thumbnails\": [\"img1.jpg\", \"img2.jpg\"]\r\n}\r\n\r\n\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/product/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "product",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT -  UpdateProduct",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Mouse Logitech\",\r\n  \"description\": \"Mouse inalambrica gamer\",\r\n  \"code\": \"MR56\",\r\n  \"price\": 120000,\r\n  \"status\": true,\r\n  \"stock\": 10,\r\n  \"category\": \"Computación\",\r\n  \"thumbnails\": [\"img1.jpg\", \"img2.jpg\"]\r\n}\r\n\r\n\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/product/update/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "product",
+            "update",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE - DeleteProduct",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/product/delete/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "product",
+            "delete",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET - AllProdcuts",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Mouse Redragon\",\r\n  \"description\": \"Mouse inalambrica gamer\",\r\n  \"code\": \"MR56\",\r\n  \"price\": 120000,\r\n  \"status\": true,\r\n  \"stock\": 10,\r\n  \"category\": \"Computación\",\r\n  \"thumbnails\": [\"img1.jpg\", \"img2.jpg\"]\r\n}\r\n\r\n\r\n\r\n"
+        },
+        "url": {
+          "raw": "http://localhost:3000/allproducts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "allproducts"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
